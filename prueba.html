@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="xlsx.full.min.js"></script>
+    <script src="FileSaver.min.js"></script>
+    <script src="tableexport.min.js"></script>
+ 
+    <script src="prueba.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button onClick="registro()" submit>Registrar</button>
+<select name="item" id="producto">
+
+    <option value="america">Americano</option>
+    <option value="capu">Cappuchino</option>
+    <option value="capu2">Cappuchino-Doble</option>
+    <option value="machiato">Macciato</option>
+    <option value="enve">Envenenado</option>
+    <option value="late">Late</option>
+    <option value="caleta">Pola</option>
+    <option value="exp2">Expresso-Doble</option>
+    <option value="exp">Expresso</option>
+    <option value="chocolate">Bebida achocolatada</option>
+    <option value="aroma">Aromatica</option>
+    <option value="moca">Mocaccino</option>
+    <option value="refresco">Refresco</option>
+    <option value="leche_v">Leche Vegetal</option>
+    <option value="pastel">Pastel-Pollo</option>
+    <option value="alfajor">Alfajor</option>
+    <option value="caleta">Caleta</option>
+
+
+    
+</select>
+<input type="number" id ="cantidad" value="0">
+    <table id="tabla">
+        <tr id ="labes">
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>TOtal</th>
+        </tr>
+
+        <tr id ="espreso">
+            <td>Esspreso</td>
+            <td id="exp_cant"></td>
+            <td id="exp_total"></td>
+            
+            
+        </tr>
+        <tr id ="espreso_2">
+            <td>Esspreso x 2</td>
+            <td id="exp_2_cant"></td>
+            <td id="exp_2_total"></td>
+            
+            
+        </tr>
+        <tr id ="americano">
+            <td>Americano</td>
+            <td id="americano_cant"></td>
+            <td id="americano_total"></td>
+            
+            
+        </tr>
+        <tr id ="aromatica">
+            <td>Aromatica</td>
+            <td id="aroma_cant"></td>
+            <td id="aroma_total"></td>
+            
+            
+        </tr>
+        <tr id ="machiato">
+            <td>Machiato</td>
+            <td id="machiato_cant"></td>
+            <td id="machiato_total"></td>
+            
+            
+        </tr>
+        <tr id ="capu">
+            <td>Capuccino</td>
+            <td id="capu_cant"></td>
+            <td id="capu_total"></td>
+            
+            
+        </tr>
+        <tr id ="capu_2">
+            <td>Capuccino x2</td>
+            <td id="capu_2_cant"></td>
+            <td id="capu_2_total"></td>
+            
+            
+        </tr>
+        <tr id ="late">
+            <td>Latte</td>
+            <td id="late_cant"></td>
+            <td id="late_total"></td>
+            
+            
+        </tr>
+        <tr id ="choco">
+            <td>Achocolatada</td>
+            <td id="choco_cant"></td>
+            <td id="choco_total"></td>
+            
+            
+        </tr>
+        <tr id ="moca">
+            <td>Mocaccino</td>
+            <td id="moca_cant"></td>
+            <td id="moca_total"></td>
+            
+            
+        </tr>
+        <tr id ="envenenado">
+            <td>Envenenado</td>
+            <td id="env_cant"></td>
+            <td id="env_total"></td>
+            
+            
+        </tr>
+        <tr id ="refresco">
+            <td>Refresco Frutal</td>
+            <td id="fresh_cant"></td>
+            <td id="fresh_total"></td>
+            
+            
+        </tr>
+        <tr id ="leche_v">
+            <td>Leche vegetal</td>
+            <td id="leche_cant"></td>
+            <td id="leche_total"></td>
+            
+            
+        </tr>
+        <tr id ="pastel">
+            <td>Pastel Pollo</td>
+            <td id="pastel_cant"></td>
+            <td id="pastel_total"></td>
+            
+            
+        </tr>
+        <tr id ="pizza">
+            <td>Pizza</td>
+            <td id="pizza_cant"></td>
+            <td id="pizza_total"></td>
+            
+            
+        </tr>
+        <tr id ="alfajor">
+            <td>Alfajor</td>
+            <td id="alfa_cant"></td>
+            <td id="alfa_total"></td>
+            
+            
+        </tr>
+
+        <tr id ="caleta">
+            <td>Caleta</td>
+            <td id="caleta_cant"></td>
+            <td id="caleta_total"></td>
+            
+            
+        </tr>
+
+
+    </table>
+
+    <button id="btnExportar">Exportar</button>
+    <script src="script.js"></script>
+
+</body>
+</html>
